@@ -67,7 +67,7 @@ These searches are considered “uninformed” due to the fact that they aren’
 | ----------------------- | ------------------:| ------------------:| --------------:| -----------:|
 | breadth_first_search    |              13.176|                3346|               9|          Yes|
 | depth_first_graph_search|                .309|                 107|             105|        No!!!|
-| uniform_cost_search     |               11.15|                4852|               8|          Yes|
+| uniform_cost_search     |               11.15|                4852|               9|          Yes|
 | greedy_best_first_search|               2.365|                 990|              15|           No|
 
 *Uninformed Problem 2 Results*
@@ -131,7 +131,7 @@ Looking at the table below, a comparison of the fastest uninformed search vs the
 | uniform_cost_search                     |              48.923|               18235|              12|          Yes|
 | A* search with ignore precond heuristic |              16.099|                5040|              12|          Yes|
 
-*Uniform Cost Search vs A* search with ignore preconditions direct comparison*
+*Uniform Cost Search vs A\* search with ignore preconditions direct comparison*
 
 ## Research Review
 For this project submission we also needed to submit a page and a half review related to research in the field of AI planning. I chose to write a research review on the advancements in the *International Planning Competition (IPC)* <sup>[2](#myfootnote2)</sup> held every year. Please see my `research_review.pdf` file to read the review.
