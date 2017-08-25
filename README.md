@@ -51,6 +51,12 @@ All of these problems have opitmal flight plans (shortest number of actions to r
 |                     |                     | Unload(C1, P1, JFK) |
 |                     |                     |**Optimal Length: 12**|
 
+### Code Execution
+To run the program with the same search algorithms described below execute the following command at the command line:
+`python run_search -p 1 2 3 -s 1 3 5 7 8 9 10`
+or run the following command to go into interactive mode:
+`python run_search -m`
+
 ## Uniformed Planning Search Results and Analysis
 These searches are considered “uninformed” due to the fact that they aren’t extracting extra information from the states. These searches are simply expanding nodes according to their heuristic until they find a goal state. For each problem I compare the relative performance of the uniformed planning searches over the following criteria: execution time, search node expansions (correlates to memory usage), path length, and whether or not the solution is optimal. *All execution times below are in seconds*.
 
@@ -132,6 +138,11 @@ Looking at the table below, a comparison of the fastest uninformed search vs the
 | A* search with ignore precond heuristic |              16.099|                5040|              12|          Yes|
 
 *Uniform Cost Search vs A\* search with ignore preconditions direct comparison*
+
+## Bonus: PyPy3 vs CPython Performance Comparison
+In this section I'll take a look at the performance of PyPy3, a JIT interpreter known for excellent execution speed, versus CPython, the standard reference Python interpreter. Since this project already comparse the performance of several algorithms, all with different execution times, and has no compatability issues with the PyPy3 interpreter it is a good candidate for a performance comparison.
+
+To setup 
 
 ## Research Review
 For this project submission we also needed to submit a page and a half review related to research in the field of AI planning. I chose to write a research review on the advancements in the *International Planning Competition (IPC)* <sup>[2](#myfootnote2)</sup> held every year. Please see my `research_review.pdf` file to read the review.
