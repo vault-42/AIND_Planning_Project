@@ -53,8 +53,11 @@ All of these problems have optimal flight plans (shortest number of actions to r
 
 ### Code Execution
 To run the program with the same search algorithms described below execute the following command at the command line:
+
 `python run_search -p 1 2 3 -s 1 3 5 7 8 9 10`
+
 or run the following command to go into interactive mode:
+
 `python run_search -m`
 
 ## Uniformed Planning Search Results and Analysis
@@ -143,6 +146,7 @@ Looking at the table below, a comparison of the fastest uninformed search vs the
 In this section I'll take a look at the performance of PyPy3<sup>[2](#myfootnote2)</sup>, a JIT interpreter known for excellent execution speed, versus CPython, the standard reference Python interpreter on this project. Since this project has no compatibility issues with the PyPy3 interpreter it is a good candidate for a performance comparison.
 
 Since I already have the execution times running on the CPython interpreter, all I need to do is run the same command with the PyPy3 interpreter as follows:
+
 `pypy3 run_search.py -p 1 2 3 -s 1 3 5 7 8 9 10`
 
 The table below shows the execution times for each Interpreter and the speedup relative to the CPython Interpreter.
